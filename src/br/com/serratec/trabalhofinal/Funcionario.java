@@ -80,15 +80,15 @@ public class Funcionario extends Pessoa implements CalculadoraIR {
 			return 0;
 
 		}
-		if (valorCalculo > 1903.99 && valorCalculo < 2826.65) {
+		if (valorCalculo >= 1903.99 && valorCalculo <= 2826.65) {
 			descontoIR = valorCalculo * 0.075 - 142.8;
 
 		}
-		if (valorCalculo > 2826.66 && valorCalculo < 3751.05) {
+		if (valorCalculo >= 2826.66 && valorCalculo <= 3751.05) {
 			descontoIR = valorCalculo * 0.15 - 354.8;
 
 		}
-		if (valorCalculo > 3751.06 && valorCalculo < 4664.68) {
+		if (valorCalculo >= 3751.06 && valorCalculo <= 4664.68) {
 			descontoIR = valorCalculo * 0.225 - 636.13;
 
 		}
